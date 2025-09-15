@@ -1,0 +1,61 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+/* GRID 1 */
+
+.grid1 {
+    display: grid;
+    grid-template-rows: 200px;          /* height of the bars */
+    grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns inside*/
+    column-gap: 20px;                   /* spacing between each of the columns/bars */
+    width: 340px;                       /*  width of the main frame/box */
+    padding: 16px;                        /*  spacing for main box */
+    background-color: #E8F4ED;          /* color of the main box/grid */
+    border: 2px solid #0A2A1F;              /* border for the main box/grid */
+    margin: 20px auto;                     /* center on page */
+}
+
+.grid1box {
+    height: 180px;                      /* height for the columns inside */
+}
+
+/* colors for each of the boxes*/
+.green1     { background-color: #1E5A42; }
+.green2 { background-color: #2E7D5B; }
+.green3    { background-color: #B2E8CC; }
+
+
+
+/* GRID 2 */
+
+.grid2{
+    display: grid;
+    grid-template-rows: 160px 160px ;      /* height of the bars */
+    grid-template-columns: 1fr 1fr;    /* only need 2 equal columns inside*/
+    gap: 40px;                   /* spacing between rows and columns */
+    width: 900px;                       /*  width of the main frame/box */
+    padding: 40px;                        /*  spacing for main box */
+    background-color: #E8F4ED;          /* color of the main box/grid */
+    border: 2px solid #0A2A1F;              /* border for the main box/grid */
+    margin: 20px auto;                     /* center on page */
+}
+
+
+.grid2box {
+  /* height of the boxes inside */
+  height: 180px;
+}
+
+
+/* making one box that stretches across BOTH columns */
+.grid2wide { grid-column: 1 / span 2; }
+
+/* adding colors to the boxes */
+.color1     { background: #7A1F4D; }
+.color2 { background: #2E7D5B; }
+.color3    { background: #69b1e1; }
+.color4    { background: #222875; }
+.color5    { background: #093fa4; }
